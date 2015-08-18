@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dr Pills</title>
+</head>
+<body>
+    <div class="bottle">
+        <div class="canvas_container">
+            <canvas id="maincanvas" style="background-color: black"></canvas>
+        </div>
+    </div>
+    <script src="Assets/Scripts/libs/jquery-1.11.1.min.js"></script>
+    <script src="Assets/Scripts/libs/underscore-min.js"></script>
+    <script src="Assets/Scripts/libs/preloadjs-0.4.1.min.js"></script>
+    <script src="Assets/Scripts/libs/easeljs-0.7.1.min.js"></script>
+    <script src="Assets/Scripts/libs/soundjs-0.5.2.min.js"></script>
+
+    <script src="Assets/Scripts/DrPills.Controlls.js"></script>
+    <script src="Assets/Scripts/DrPills.Pill.js"></script>
+    <script src="Assets/Scripts/DrPills.PillJar.js"></script>
+    <script src="Assets/Scripts/DrPills.Sprites.js"></script>
+    <script src="Assets/Scripts/DrPills.Game.js"></script>
+
+    <script>
+        var Game = new DrPills.Game({ player1JarId: "maincanvas" });
+        Game.Start();
+    </script>
+</body>
+</html>
